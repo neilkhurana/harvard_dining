@@ -7,22 +7,18 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+library(readr)
 ```
 
 The following contain all the meals from Harvard University Dining Services as of 11/10/2018. There was a script available on the Harvard Open Data Project website that basically scrapes all the dining data from that day to today. Harvard Open Data is a student organization on campus that tries to make data sets available to the public and they also do some analysis on their own. As a memeber of Harvard Open Data Project, not only is this project going to be for my class but I will write a data journalism article for the Open Data Project website. I am thinking of taking all the meals from last winter semester and seeing the repitition/frequency of meals within the semester. I am still not completely sure about everything else I could map out but could maybe also do a cross comparision across lunch and dinner.   
 
 Below I have a gpplot that maps out. 
 
-```{r cars}
-summary(cars)
+```{r plot}
+huds <- read_csv("HUDS_Menu_Data.csv")
+
+
+
 ```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
